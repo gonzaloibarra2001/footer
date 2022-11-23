@@ -5,6 +5,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     text-decoration: none;
+   
 }
 
 
@@ -19,11 +20,12 @@ header{
     
 }
 .logo{
-    height: 80%;
+    height: 70%;
     display: flex;
     flex-direction: row;
     padding-left: 60px;
     width: auto;
+    border-radius: 0%;
 }
 ul{
     display: flex;
@@ -37,60 +39,75 @@ ul{
     display: flex;
     font-weight: bold;
     text-decoration: none;
-    color: white;
+    color: rgb(255, 0, 0);
     font-size: 700;
     display: inline-block;
 }
-main{
-    background-color: black;
+#info{
+    padding: 70px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+#info h2{
+    font-size: 32px;
+    font-weight: 800;
+    }
+.info-cards-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.info-card{
+    width: 300px;
+    height: 200px;
+    padding: 40px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    color: white;
-    width:100%;
-    height:100%;
-}
-#hero{
-    margin-top: 65px;
-    padding: 70px 0;
-   max-width: 12000px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-.hero-info{
-    display:flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 50%;
-}
-.hero-info h1{
-    display: flex;
-    flex-direction: row;
-    font-size: 48px;
-    width:80%;
-    min-width: 500px;
-    font-weight: 800;
-}
-.hero-info p{
-    font-size: 14px;
-    width: 70%;
-}
-.hero-info p > span{
-    font-weight: 800;
-} 
-.hero-info a{
-    color: blue;
-    background-color: white;
-    width: 120px;
-    padding: 8px 0px;
-    border-radius: 10px;
-    font-size: 14px;
     text-align: center;
+    background: rgb(25, 25, 83);
+    gap: 20px;
+    border-radius: 10px;
+}    
+.info-card img{
+    width: 50px;
 }
-
-.hero-card{
-    width: 300px;
-    background-color:grey;
+.info-card h3{
+    font-weight: 600;
+    font-size: 18px;
+}
+.info-cards p {
+    font-size: 14px;
+    font-weight:300;
+    color: white;
+    background-color: white;
+}
+footer{
+    background: black;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 0;
+}
+footer p{
+    color: grey;
+    font-weight: 300;
+    font-size: 14px;
+}
+footer span{
+    font-weight: 800;
+}
+.footer-links{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
